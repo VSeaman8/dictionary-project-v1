@@ -14,7 +14,9 @@ export default function App() {
         <footer className="text-center">
           <small>
             Coded by{" "}
-            <a href="https://github.com/CathrineZA/dictionary-app">Cathy</a>
+            <a href="https://github.com/VSeaman8/dictionary-project-v1">
+              Vicki
+            </a>
           </small>
         </footer>
       </div>
