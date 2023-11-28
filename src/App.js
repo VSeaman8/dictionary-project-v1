@@ -5,16 +5,18 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
+        <header className="App-header">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/847/original/shecodes_logo.png?1693909358"
+            className="App-logo img-fluid"
+            alt="logo"
+          />
+        </header>
         <main>
           <Dictionary defaultKeyword="sunset" />
         </main>
-        <footer className="text-center">
-          <small>
-            Coded by{" "}
-            <a href="https://github.com/VSeaman8/dictionary-project-v1">
-              Vicki Seaman
-            </a>
-          </small>
+        <footer className="App-footer">
+          <small>Coded by Vicki</small>
         </footer>
       </div>
     </div>

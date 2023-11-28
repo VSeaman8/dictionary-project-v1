@@ -10,7 +10,6 @@ export default function Dictionary(props) {
 
   function handleResponse(response) {
     setResults(response.data[0]);
-    console.log(response);
   }
 
   function search() {
@@ -18,6 +17,7 @@ export default function Dictionary(props) {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
   }
+
   function handleSubmit(event) {
     event.preventDefault();
     search();
@@ -26,10 +26,12 @@ export default function Dictionary(props) {
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
   }
+
   function load() {
     setLoaded(true);
     search();
   }
+
   if (loaded) {
     return (
       <div className="Dictionary">
@@ -42,7 +44,9 @@ export default function Dictionary(props) {
               defaultValue={props.defaultKeyword}
             />
           </form>
-          <div className="hint">suggested words: sunset, love</div>
+          <div className="hint">
+            suggested words: sunset, wine, yoga, plant...
+          </div>
         </section>
         <Results results={results} />
       </div>

@@ -13,9 +13,10 @@
 
 .Dictionary input {
   width: 100%;
-  padding: 6px 4px;
-  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 6px 10px;
   color: #333;
+  border: 1px solid #ddd;
 }
 
 .Dictionary .hint {
