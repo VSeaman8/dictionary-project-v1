@@ -2,9 +2,16 @@ import React from "react";
 import "./Phonetic.css";
 
 export default function Phonetic(props) {
+  const audioRef = React.createRef();
+
   return (
     <div className="Phonetic">
-      <a href={props.phonetic.audio} target="_blank" ref="noreferrer">
+      <a
+        href={props.phonetic.audio}
+        target="_blank"
+        rel="noreferrer"
+        ref={audioRef}
+      >
         Listen
       </a>
       <span className="text">{props.phonetic.text}</span>
